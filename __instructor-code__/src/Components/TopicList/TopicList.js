@@ -21,8 +21,8 @@ class TopicList extends Component {
     const { posts } = this.state;
     let displayTopics = posts.map(post => {
       return <li key={post.id}>
-        <Link to={`/post/${post.id}`}>{post.title}</Link>
-      </li>;
+                <Link to={`/post/${post.id}`}>{post.title}</Link>
+            </li>;
     });
     return (
       <div className="TopicList">
